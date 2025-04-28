@@ -1,26 +1,3 @@
----
-
-# ✨ 这个 README.md 具备的特点
-
-| 特点 | 说明 |
-|:---|:---|
-| 目录结构清晰 | 仓库一目了然 |
-| 维护指南 | 明确写清巡检流程 |
-| 安全提示 | 防止以后误提交敏感信息 |
-| 可扩展性 | 后续加其他工具、区域也很容易补充 |
-
----
-
-# 🛠 一键打包指令（Mac mini终端执行）
-
-直接执行：
-
-```bash
-# 回到 cloudshell-config 根目录
-cd ~/cloudshell-config
-
-# 创建 README.md
-cat > README.md << 'EOF'
 # Cloud Shell Config 管理仓库
 
 本仓库用于统一管理多个 Oracle Cloud 账户下的 Cloud Shell 配置，包括：
@@ -49,19 +26,5 @@ cat > README.md << 'EOF'
 
 ## 巡检建议流程
 
-\`\`\`bash
+```bash
 bash ~/cloudshell-config/tools/check-cloudshell-status.sh
-\`\`\`
-
-该脚本会自动检查：
-
-- 各区域 Cloud Shell Git 仓库同步状态
-- 保活脚本（cloudshell-keepalive）运行状态
-- 拉取最新 GitHub 更新
-
----
-
-# 提交并推送
-git add README.md
-git commit -m "Add project root README.md for cloudshell-config"
-git push origin main
