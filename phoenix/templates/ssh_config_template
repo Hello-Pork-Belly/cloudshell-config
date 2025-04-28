@@ -1,0 +1,7 @@
+# SSH Config 示例模板（占位符版）
+
+Host vps-placeholder
+  HostName xxx.xxx.xxx.xxx
+  User your-username
+  Port your-ssh-port
+  IdentityFile ~/.ssh/id_rsa
